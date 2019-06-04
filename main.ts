@@ -73,7 +73,7 @@ enum BCColors
  */
 /** //% weight=10 color=#0fbc11 icon="\uf1cd" */
 //% weight=10 color=#e7660b icon="\uf1cd"
-namespace bitcopter
+namespace BitCopter
 {
     let leds: neopixel.Strip;
     let ledCount = 4;
