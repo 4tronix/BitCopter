@@ -80,11 +80,12 @@ namespace BitCopter
 
     /**
       * Rotate selected motor at speed.
+      * @param motor motor to control
       * @param speed speed of motor between 0 and 1023. eg: 600
       */
     //% subcategory=Motors
     //% group=Motors
-    //% blockId="rotate_motor" block="rotate 02 %motor| motor at speed %speed"
+    //% blockId="rotate_motor" block="rotate 03 %motor| motor at speed %speed"
     //% speed.min=0 speed.max=1023
     //% weight=110
     export function rotate(_motor: BCMotor, speed: number): void
