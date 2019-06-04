@@ -1,15 +1,15 @@
 {
-    "name": "BitCopter",
+    "name": "PCB-Rover",
     "version": "0.0.1",
-    "description": "Microsoft MakeCode package for 4tronix BitCopter",
+    "description": "Microsoft MakeCode package for 4tronix Rover",
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "neopixel": "github:microsoft/pxt-neopixel#v0.6.10"
+        "neopixel": "github:microsoft/pxt-neopixel#v0.6.2"
     },
     "files": [
         "README.md",
-        "main.ts",
+        "main.ts"
     ],
     "testFiles": [
         "tests.ts"
