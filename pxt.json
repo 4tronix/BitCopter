@@ -1,0 +1,19 @@
+{
+    "name": "BitCopter",
+    "version": "0.0.1",
+    "description": "Microsoft MakeCode package for 4tronix BitCopter",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.6.10"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "yotta": {},
+    "public": true
+}
