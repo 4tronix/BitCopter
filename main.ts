@@ -85,10 +85,10 @@ namespace BitCopter
       */
     //% subcategory=Motors
     //% group=Motors
-    //% blockId="rotate_motor" block="rotate 05 %motor| motor at speed %speed"
+    //% blockId="rotate_motor" block="rotate 06 %motor| motor at speed %speed"
     //% speed.min=0 speed.max=1023
     //% weight=110
-    export function rotate(_motor: BCMotor, speed: number): void
+    export function bc_rotateMotor(_motor: BCMotor, speed: number): void
     {
         motor(_motor, speed);
     }
@@ -96,8 +96,7 @@ namespace BitCopter
 
     function motor(motor: BCMotor, speed: number): void
     {
-        let motorPin = AnalogPin.P12;
-        pins.analogWritePin(motorPin, speed);
+        pins.analogWritePin(AnalogPin.P12, speed);
     }
 
 
