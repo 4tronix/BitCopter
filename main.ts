@@ -101,7 +101,7 @@ namespace BitCopter
       *
       * @param state Select Enabled or Disabled
       */
-    //% blockId="enableServos" block="%state all 12 servos"
+    //% blockId="enableServos" block="%state all 13 servos"
     //% weight=90
     export function enableServos(state: States): void
     {
@@ -123,7 +123,7 @@ namespace BitCopter
 
     function turnMotor(motor: BCMotor, speed: number): void
     {
-        motorPin = AnalogPin.P12;
+        let motorPin = AnalogPin.P12;
         switch (motor)
         {
             case BCMotor.FR: MotorPin = AnalogPin.P13; break;
