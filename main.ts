@@ -101,7 +101,7 @@ namespace BitCopter
       *
       * @param state Select Enabled or Disabled
       */
-    //% blockId="enableServos" block="%state all 16 servos"
+    //% blockId="enableServos" block="%state all 17 servos"
     //% weight=90
     export function enableServos(state: States): void
     {
@@ -109,7 +109,7 @@ namespace BitCopter
     }
 
     /**
-      * Rotate selected motor at speed.
+      * Turn selected motor at speed.
       * @param motor motor to drive
       * @param speed speed of motor between 0 and 1023. eg: 600
       */
@@ -126,9 +126,9 @@ namespace BitCopter
         let motorPin = AnalogPin.P12;
         switch (motor)
         {
-            case BCMotor.FR: motorPin = AnalogPin.P13;
-        //    case BCMotor.RR: motorPin = AnalogPin.P14; break;
-        //    case BCMotor.RL: motorPin = AnalogPin.P15; break;
+            case BCMotor.FR: motorPin = AnalogPin.P13; break;
+            case BCMotor.RR: motorPin = AnalogPin.P14; break;
+            case BCMotor.RL: motorPin = AnalogPin.P15; break;
         //    default: motorPin = AnalogPin.P12;
         }
         pins.analogWritePin(motorPin, speed);
