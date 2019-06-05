@@ -1,4 +1,34 @@
 ﻿/**
+  * Enumeration of motors
+  */
+enum BCMotor
+{
+    //% block="FrontLeft"
+    FL,
+    //% block="FrontRight"
+    FR,
+    //% block="RearLeft"
+    RL,
+    //% block="RearRight"
+    RR
+}
+
+/**
+  * Enumeration of directions
+  */
+enum BCDirection
+{
+    //% block="left"
+    Left,
+    //% block="right"
+    Right,
+    //% block="forward"
+    Forward,
+    //% block="reverse"
+    Reverse
+}
+
+/**
   * Enumeration of servos
   */
 enum Servos
@@ -33,17 +63,6 @@ enum States
 {
     Enable,
     Disable
-}
-
-/**
-  * Enumeration of directions.
-  */
-enum RBRobotDirection
-{
-    //% block="left"
-    Left,
-    //% block="right"
-    Right
 }
 
 
@@ -82,7 +101,7 @@ namespace BitCopter
       *
       * @param state Select Enabled or Disabled
       */
-    //% blockId="enableServos" block="%state all 10 servos"
+    //% blockId="enableServos" block="%state all 11 servos"
     //% weight=90
     export function enableServos(state: States): void
     {
