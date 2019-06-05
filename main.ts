@@ -52,7 +52,7 @@ enum RBRobotDirection
  */
 
 //% weight=10 color=#e7660b icon="\uf1cd"
-namespace Rover
+namespace BitCopter
 {
     let PCA = 0x40;	// i2c address of 4tronix Animoid servo controller
     let EEROM = 0x50;	// i2c address of EEROM
@@ -82,7 +82,7 @@ namespace Rover
       *
       * @param state Select Enabled or Disabled
       */
-    //% blockId="enableServos" block="%state all 08 servos"
+    //% blockId="enableServos" block="%state all 09 servos"
     //% weight=90
     export function enableServos(state: States): void
     {
