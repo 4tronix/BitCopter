@@ -83,7 +83,7 @@ namespace BitCopter
       * @param motor motor to drive
       * @param speed speed of motor between 0 and 1023. eg: 600
       */
-    //% blockId="rotate_motor" block="rotate 20 %motor| motor at speed %speed"
+    //% blockId="rotate_motor" block="rotate 21 %motor| motor at speed %speed"
     //% weight=110
     export function rotate(motor: BCMotor, speed: number): void
     {
